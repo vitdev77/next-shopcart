@@ -1,9 +1,10 @@
+import Container from '@/components/Container';
 import { Button } from '@/components/ui/button';
 import React from 'react';
 
 const Home = () => {
   return (
-    <div className="p-10 bg-shop-light-pink">
+    <Container>
       <h2 className="text-xl font-semibold">Home</h2>
       <p>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur
@@ -14,7 +15,7 @@ const Home = () => {
         molestiae reprehenderit voluptas beatae?
       </p>
       <Button size={'lg'}>Check out</Button>
-    </div>
+    </Container>
   );
 };
 

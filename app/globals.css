@@ -1,10 +1,10 @@
 @import 'tailwindcss';
-@import "tw-animate-css";
+@import 'tw-animate-css';
 
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
-  --font-sans: Popppins, sans-serif;
+  --font-poppins: Poppins, sans-serif;
   --color-shop-light-pink: #fcf0e4;
   --color-shop-dark-green: #063c28;
   --color-shop-btn-dark-green: #063d29;
@@ -126,5 +126,8 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+  .hoverEffect {
+    @apply transition-all duration-300 ease-in-out;
   }
 }
