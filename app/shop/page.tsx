@@ -1,7 +1,8 @@
-import React from 'react';
+import * as React from 'react';
+import Container from '@/components/Container';
 
 const ShopPage = () => {
-  return <div>ShopPage</div>;
+  return <Container>ShopPage</Container>;
 };
 
 export default ShopPage;

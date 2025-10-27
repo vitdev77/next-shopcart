@@ -12,10 +12,9 @@ import MobileMenu from './MobileMenu';
 
 const Header = async () => {
   const user = await currentUser();
-  console.log(user, 'user');
 
   return (
-    <header className="bg-white py-5 border-b border-b-black/20">
+    <header className="bg-white py-5">
       <Container className="flex items-center justify-between text-shop-lightColor">
         <div className="w-auto md:w-1/3 flex items-center gap-2.5 justify-start md:gap-0">
           <MobileMenu />
