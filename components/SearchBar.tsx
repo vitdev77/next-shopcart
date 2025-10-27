@@ -1,5 +1,5 @@
+import * as React from 'react';
 import { Search } from 'lucide-react';
-import React from 'react';
 
 const SearchBar = () => {
   return (

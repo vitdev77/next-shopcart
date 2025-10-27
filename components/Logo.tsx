@@ -1,18 +1,29 @@
+import * as React from 'react';
 import { cn } from '@/lib/utils';
 import Link from 'next/link';
-import React from 'react';
 
-function Logo({ className }: { className?: string }) {
+function Logo({
+  className,
+  spanDesign,
+}: {
+  className?: string;
+  spanDesign?: string;
+}) {
   return (
     <Link href={'/'}>
       <h2
         className={cn(
-          'text-2xl font-sans text-shop-dark-green font-black tracking-wider uppercase hoverEffect hover:text-shop-light-green group',
+          'text-2xl text-shop-dark-green font-black tracking-wider uppercase hoverEffect hover:text-shop-light-green group',
           className
         )}
       >
         Shopcar
-        <span className="text-shop-light-green group-hover:text-shop-dark-green hoverEffect">
+        <span
+          className={cn(
+            'text-shop-light-green group-hover:text-shop-dark-green hoverEffect',
+            spanDesign
+          )}
+        >
           t
         </span>
       </h2>
