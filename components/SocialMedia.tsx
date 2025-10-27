@@ -52,7 +52,7 @@ const SocialMedia = () => {
               <Link
                 target={'_blank'}
                 rel={'noopener noreferrer'}
-                className="p-2.5 flex items-center justify-center rounded-full bg-white/5 hover:text-shop-light-green hoverEffect"
+                className="p-2.5 flex items-center justify-center rounded-full bg-gray-400/10 hover:text-shop-light-green hoverEffect"
                 href={item?.href}
                 title={item?.title}
               >

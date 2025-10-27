@@ -20,10 +20,10 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en">
-        <body className="font-poppins antialiased">
+        <body className="font-roboto-flex antialiased">
           <div className="flex flex-col min-h-screen">
             <Header />
-            <main>{children}</main>
+            <main className="flex-1">{children}</main>
             <Footer />
           </div>
         </body>
