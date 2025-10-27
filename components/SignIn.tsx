@@ -1,10 +1,13 @@
 import * as React from 'react';
+import { SignInButton } from '@clerk/nextjs';
 
 const SignIn = () => {
   return (
-    <button className="text-sm font-semibold text-shop-lightColor hover:text-shop-darkColor hoverEffect">
-      Login
-    </button>
+    <SignInButton mode="modal">
+      <button className="text-sm font-semibold text-shop-lightColor hover:text-shop-darkColor hover:cursor-pointer hoverEffect">
+        Login
+      </button>
+    </SignInButton>
   );
 };
 
