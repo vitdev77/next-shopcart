@@ -1,12 +1,11 @@
 import { defineType, defineField } from 'sanity';
-import { TagIcon } from 'lucide-react';
-import { title } from 'process';
+import { IconTag } from '@tabler/icons-react';
 
 export const categoryType = defineType({
   name: 'category',
   title: 'Category',
   type: 'document',
-  icon: TagIcon,
+  icon: IconTag,
   fields: [
     defineField({
       name: 'title',
